@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AR3D" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9p4-KC-gqS"/>
+                        <viewControllerLayoutGuide type="bottom" id="Crs-j9-0as"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tUt-Xq-TIm">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </sceneKitView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7SE-g2-xqa">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="iuT-2w-T5f">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="7SE-g2-xqa" secondAttribute="trailing" id="6lL-Xz-Fho"/>
+                            <constraint firstItem="7SE-g2-xqa" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="7Mb-pV-2u2"/>
+                            <constraint firstItem="Crs-j9-0as" firstAttribute="top" secondItem="tUt-Xq-TIm" secondAttribute="bottom" id="B9q-Qm-WjU"/>
+                            <constraint firstAttribute="bottom" secondItem="7SE-g2-xqa" secondAttribute="bottom" id="Eux-G3-GfI"/>
+                            <constraint firstItem="7SE-g2-xqa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="SMO-Yb-734"/>
+                            <constraint firstItem="tUt-Xq-TIm" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="j2O-5T-0dq"/>
+                            <constraint firstAttribute="trailing" secondItem="tUt-Xq-TIm" secondAttribute="trailing" id="pwg-0I-X7g"/>
+                            <constraint firstItem="tUt-Xq-TIm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="riX-MT-vXU"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
